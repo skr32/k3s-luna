@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: https://github.com/skr32/k3s-luna.git
     targetRevision: HEAD
-    path: argocd/dev
+    path: argocd
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: app
   syncPolicy:
     automated:
       prune: true
