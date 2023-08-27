@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/skr32/k3s-luna.git
     targetRevision: HEAD
-    path: argocd
+    path: apps
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx
