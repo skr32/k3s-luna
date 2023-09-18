@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ghost-helm-test
+  name: ghost-helm-test2
   namespace: argocd
 spec:
   project: ghost2
