@@ -7,7 +7,7 @@ spec:
   project: default 
   source:
     chart: ghost
-    repoURL: https://github.com/k8s-at-home/charts.git
+    repoURL: https://github.com/k8s-at-home/charts
     path: charts/stable/ghost
     targetRevision: 2.1.2
     helm:
