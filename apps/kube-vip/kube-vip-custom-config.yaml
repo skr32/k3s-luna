@@ -79,8 +79,3 @@ spec:
       - effect: NoExecute
         operator: Exists
   updateStrategy: {}
-#status:
-  currentNumberScheduled: 3
-  desiredNumberScheduled: 3
-  numberMisscheduled: 0
-  numberReady: 3
