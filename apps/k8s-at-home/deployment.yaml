@@ -4,7 +4,7 @@ metadata:
   name: ghost-helm-test2
   namespace: argocd
 spec:
-  project: ghost2
+  project: default 
   source:
     chart: ghost
     repoURL: https://github.com/k8s-at-home/charts.git
