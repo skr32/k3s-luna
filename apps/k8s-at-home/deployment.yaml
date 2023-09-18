@@ -4,7 +4,7 @@ metadata:
   name: ghost-helm-test
   namespace: argocd
 spec:
-  project: ghost
+  project: ghost2
   source:
     chart: ghost
     repoURL: https://github.com/k8s-at-home/charts.git
@@ -14,7 +14,7 @@ spec:
       releaseName: ghost
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: ghost
+    namespace: ghost2
   syncPolicy:
     automated:
       prune: true
