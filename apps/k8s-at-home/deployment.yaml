@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: ghost-helm-test
-  namespace: ghost
+  #namespace: ghost
 spec:
   project: ghost
   source:
@@ -13,4 +13,4 @@ spec:
       releaseName: ghost
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: ghost
+    #namespace: ghost
