@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ghost-helm-test
+  namespace: ghost
+spec:
+  project: ghost
+  source:
+    chart: ghost
+    repoURL: https://github.com/k8s-at-home/charts
+    targetRevision: 2.1.2
+    helm:
+      releaseName: ghost
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: ghost
