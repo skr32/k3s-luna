@@ -4,7 +4,7 @@ metadata:
   annotations:
     kompose.cmd: kompose convert
     kompose.version: 1.29.0 (997957870)
-    metallb.universe.tf/loadBalancerIPs: 10.20.5.200
+    metallb.universe.tf/loadBalancerIPs: 10.20.5.201
   creationTimestamp: null
   labels:
     io.kompose.service: bookstack
