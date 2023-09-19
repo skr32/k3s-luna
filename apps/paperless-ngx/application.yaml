@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: paperless-ngx
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/paperless-ngx/paperless-ngx.git
+    targetRevision: main
+    path: charts/paperless-ngx/
+    helm:
+      releaseName: my-paperless-ngx
+      #values: |
+      #  auth:
+      #    username: my-user
+      #    password: my-password
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
