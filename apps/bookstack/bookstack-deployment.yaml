@@ -32,7 +32,7 @@ spec:
             - name: DB_DATABASE
               value: bookstackapp
             - name: DB_HOST
-              value: bookstack_db
+              value: bookstack-db
             - name: DB_PASS
               value: <yourdbpass>
             - name: DB_PORT
