@@ -28,7 +28,7 @@ spec:
       containers:
         - env:
             - name: APP_URL
-              value: https://bookstack.example.com
+              value: http://bookstack.example.com
             - name: DB_DATABASE
               value: bookstackapp
             - name: DB_HOST
